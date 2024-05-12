@@ -138,6 +138,8 @@ async def handle_message(client, message):
 @app.on_edited_message(filters.group & ~filters.me)
 async def delete_edited_messages(client, edited_message):
     await edited_message.delete()
+    user_mention = from_user.mention
+    await edited_message.reply_text(f"{user_mention} ᴇᴅɪᴛᴇᴅ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ I ᴅᴇʟᴇᴛᴇᴅ ɪᴛ🤡👽").
 
 
 
