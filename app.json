@@ -1,7 +1,7 @@
 {
   "name": "telegram-bot-app",
   "description": "Telegram Bot using Pyrogram",
-  "repository": "https://github.com/un-bots/copy",
+  "repository": "https://github.com/un-bots/lucy",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
