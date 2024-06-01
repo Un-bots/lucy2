@@ -119,7 +119,7 @@ async def delete_and_reply(_, msg):
 async def delete_pdf_files(client, message):
     if message.document and message.document.mime_type == "application/pdf":
         user_mention = from_user.mention
-            warning_message = f"{user_mention} ᴘʟꜱ ᴅᴏɴᴛ ꜱᴇɴᴅ ᴘꜰᴅ ᴀɢᴀɪɴ.. \n\n        ᕦ⁠(⁠ò⁠_⁠ó⁠ˇ⁠)⁠ᕤ"
+            warning_message = f"{user_mention} ᴘʟꜱ ᴅᴏɴᴛ ꜱᴇɴᴅ ᴘꜰᴅ ᴀɢᴀɪɴ.."
         await message.reply_text(warning_message)
         await message.delete()
     else:  
