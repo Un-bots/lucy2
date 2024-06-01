@@ -93,7 +93,7 @@ async def handle_message(client, message):
 async def delete_edited_messages(client, edited_message):
     await edited_message.delete()
     user_mention = from_user.mention
-    await app.send_message(msg.chat.id, f"{user_mention} ᴇᴅɪᴛᴇᴅ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ I ᴅᴇʟᴇᴛᴇᴅ ɪᴛ🤡")
+    await message.text(f"{user_mention} Jᴜsᴛ ᴇᴅɪᴛᴇᴅ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ I ᴅᴇʟᴇᴛᴇᴅ ɪᴛ🤡")
 
 
 
@@ -118,7 +118,8 @@ async def delete_and_reply(_, msg):
 
 async def delete_pdf_files(client, message):
     if message.document and message.document.mime_type == "application/pdf":
-        warning_message = f"@{message.from_user.username} ᴍᴀᴀ ᴍᴀᴛ ᴄʜᴜᴅᴀ ᴘᴅғ ʙʜᴇᴊ ᴋᴇ,\n ʙʜᴏsᴀᴅɪᴋᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀɢʏᴇɢᴀ \n\n ᕦ⁠(⁠ò⁠_⁠ó⁠ˇ⁠)⁠ᕤ"
+        user_mention = from_user.mention
+            warning_message = f"{user_mention} ᴘʟꜱ ᴅᴏɴ'ᴛ ꜱᴇɴᴅ ᴘꜰᴅ ᴀɢᴀɪɴ.. \n\n        ᕦ⁠(⁠ò⁠_⁠ó⁠ˇ⁠)⁠ᕤ"
         await message.reply_text(warning_message)
         await message.delete()
     else:  
